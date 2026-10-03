@@ -3,20 +3,113 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SimplyDone</title>
-    <meta name="description" content="Simple apps that keep your data on your device." />
+    <title>SimplyDone - ToDo &amp; Tasks</title>
+    <meta name="description" content="Lists, tasks, reminders and routines, kept simple. Everything stays on your iPhone. No account, no ads, no tracking." />
+    <meta name="apple-itunes-app" content="app-id=6815755294" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <h1>SimplyDone</h1>
-      <p class="subtitle">Simple apps that keep your data on your device.</p>
+    <main class="wide">
+      <header class="app-header">
+        <img class="app-icon" src="todo/images/icon.png" width="96" height="96" alt="SimplyDone app icon" />
+        <div>
+          <h1>SimplyDone - ToDo &amp; Tasks</h1>
+          <p class="tagline">Lists, tasks, reminders and routines, kept simple.</p>
+          <a class="store-badge" href="https://apps.apple.com/app/id6815755294">
+            <img src="todo/images/app-store-black.svg" width="150" height="50" alt="Download on the App Store" />
+          </a>
+          <p class="meta">Free · For iPhone and iPad · Pro is a one-time purchase</p>
+        </div>
+      </header>
 
-      <div class="card">
-        <h3>SimplyDone - ToDo &amp; Tasks</h3>
-        <p>Lists, tasks, reminders and routines, kept simple.</p>
-        <p><a href="todo/support/">Support</a> · <a href="todo/privacy/">Privacy Policy</a> · <a href="todo/terms/">Terms of Use</a> · <a href="todo/changelog/">What's New</a></p>
+      <section class="gallery" aria-label="Screenshots">
+        <figure>
+          <figcaption><strong>Your lists. Your data.</strong> Everything stays on your iPhone.</figcaption>
+          <div class="phone"><img src="todo/images/main.webp" width="660" height="1434" alt="The main screen with pinned and active lists in color groups" /></div>
+        </figure>
+        <figure>
+          <figcaption><strong>Just check it off.</strong> No clutter. Just your tasks.</figcaption>
+          <div class="phone"><img src="todo/images/check.webp" width="660" height="1434" alt="A grocery list with some items checked off" loading="lazy" /></div>
+        </figure>
+        <figure>
+          <figcaption><strong>Make it a routine.</strong> Repeating lists and History, with Pro.</figcaption>
+          <div class="phone"><img src="todo/images/routine.webp" width="660" height="1434" alt="History of a repeating morning list, with the time each task was done" loading="lazy" /></div>
+        </figure>
+        <figure>
+          <figcaption><strong>Never miss a thing.</strong> Reminders right on your tasks.</figcaption>
+          <div class="phone"><img src="todo/images/reminders.webp" width="660" height="1434" alt="Upcoming reminders grouped by day" loading="lazy" /></div>
+        </figure>
+        <figure>
+          <figcaption><strong>Share a list in a tap.</strong> AirDrop. Free, no account needed.</figcaption>
+          <div class="phone"><img src="todo/images/share.webp" width="660" height="1434" alt="Sharing a grocery list from the share sheet" loading="lazy" /></div>
+        </figure>
+        <figure>
+          <figcaption><strong>Add a photo to any task.</strong> Snap the flyer, the note, the list.</figcaption>
+          <div class="phone"><img src="todo/images/photos.webp" width="660" height="1434" alt="A photo of a field trip flyer attached to a task" loading="lazy" /></div>
+        </figure>
+        <figure>
+          <figcaption><strong>Sorted your way.</strong> Color groups, pins and filters.</figcaption>
+          <div class="phone"><img src="todo/images/sorted.webp" width="660" height="1434" alt="Filtering the main screen by Pinned, Active or Completed" loading="lazy" /></div>
+        </figure>
+        <figure>
+          <figcaption><strong>No sign-up. Just start.</strong> Your lists never leave your iPhone.</figcaption>
+          <div class="phone"><img src="todo/images/dark.webp" width="660" height="1434" alt="The main screen in dark mode" loading="lazy" /></div>
+        </figure>
+      </section>
+
+      <h2>Kept simple</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Private by design</h3>
+          <p>Your lists, tasks and photos are saved only on your device. No account, no ads, no tracking, no analytics.</p>
+        </div>
+        <div class="card">
+          <h3>Repeating lists</h3>
+          <p>Repeat a list every day, every week or every 2 weeks. Done tasks start fresh, and History keeps what got done. With Pro.</p>
+        </div>
+        <div class="card">
+          <h3>Reminders</h3>
+          <p>Set a reminder on any task and see what's coming up today, tomorrow and later.</p>
+        </div>
+        <div class="card">
+          <h3>Share with AirDrop</h3>
+          <p>Send a list to another iPhone or iPad. It opens right in SimplyDone. Sharing is free.</p>
+        </div>
+        <div class="card">
+          <h3>Photos and descriptions</h3>
+          <p>Add a description or a photo to any task, so the details are right where you need them.</p>
+        </div>
+        <div class="card">
+          <h3>Groups, pins and filters</h3>
+          <p>Color-code lists into groups, pin the ones you use most, and filter to see just what matters.</p>
+        </div>
+        <div class="card">
+          <h3>Light and dark</h3>
+          <p>Follows your iPhone's appearance, or switch between light and dark with one tap on the main screen.</p>
+        </div>
+        <div class="card">
+          <h3>7 languages</h3>
+          <p>English, Spanish, Japanese, Korean, Thai, Vietnamese and Simplified Chinese.</p>
+        </div>
       </div>
+
+      <h2>Free, with a one-time Pro</h2>
+      <div class="features">
+        <div class="card">
+          <p class="label">Free</p>
+          <p>Up to 3 lists with up to 3 tasks in each. Reminders, photos, groups and sharing included.</p>
+        </div>
+        <div class="card">
+          <p class="label">SimplyDone Pro</p>
+          <p>Unlimited lists and tasks, plus repeating lists. Buy it once and keep it for good. No subscription.</p>
+        </div>
+      </div>
+
+      <footer>
+        <p><a href="todo/support/">Support</a> · <a href="todo/privacy/">Privacy Policy</a> · <a href="todo/terms/">Terms of Use</a> · <a href="todo/changelog/">What's New</a></p>
+      </footer>
     </main>
   </body>
 </html>

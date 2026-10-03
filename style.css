@@ -4,6 +4,7 @@
   --background: #ffffff;
   --card: #f2f2f7;
   --link: #007aff;
+  --hairline: rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +14,7 @@
     --background: #000000;
     --card: #1c1c1e;
     --link: #0a84ff;
+    --hairline: rgba(255, 255, 255, 0.16);
   }
 }
 
@@ -96,4 +98,132 @@ footer {
   margin-top: 48px;
   color: var(--muted);
   font-size: 15px;
+}
+
+/* Product page */
+
+main.wide {
+  max-width: 960px;
+}
+
+.app-header {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  margin-bottom: 4px;
+}
+
+.app-icon {
+  flex: none;
+  width: 96px;
+  height: 96px;
+  border-radius: 22%;
+  box-shadow: 0 0 0 1px var(--hairline);
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.store-badge {
+  display: block;
+  width: fit-content;
+}
+
+.store-badge img {
+  display: block;
+  width: 150px;
+  height: auto;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 12px 0 0;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin: 0 -16px;
+  padding: 4px 16px 20px;
+  scroll-padding: 0 16px;
+}
+
+.gallery figure {
+  flex: 0 0 200px;
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.gallery figcaption {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.4;
+  min-height: 63px;
+  margin-bottom: 12px;
+}
+
+.gallery figcaption strong {
+  display: block;
+  color: var(--text);
+  font-size: 17px;
+}
+
+.phone {
+  padding: 6px;
+  border-radius: 36px;
+  background: #1c1c1e;
+  box-shadow: 0 0 0 1px var(--hairline);
+}
+
+.phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.features .card {
+  margin: 0;
+}
+
+.features h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .app-header h1 {
+    font-size: 28px;
+  }
+
+  .tagline {
+    font-size: 17px;
+  }
 }
