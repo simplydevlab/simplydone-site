@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SimplyDone - ToDo &amp; Tasks · Simple To-Do List App for iPhone</title>
-    <meta name="description" content="A simple to-do list app for iPhone and iPad. Lists, tasks, reminders and routines, kept simple. Free, with no account. Your lists stay on your iPhone." />
+    <meta name="description" content="A simple to-do list app for iPhone and iPad. Lists, tasks, notes, reminders and routines, kept simple. Free, with no account. Your lists stay on your iPhone." />
     <link rel="canonical" href="https://simplydevlab.github.io/simplydone-site/" />
     <meta name="apple-itunes-app" content="app-id=6815755294" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="SimplyDone" />
     <meta property="og:title" content="SimplyDone - ToDo &amp; Tasks" />
-    <meta property="og:description" content="Lists, tasks, reminders and routines, kept simple. Free, with no account. Your lists stay on your iPhone." />
+    <meta property="og:description" content="Lists, tasks, notes, reminders and routines, kept simple. Free, with no account. Your lists stay on your iPhone." />
     <meta property="og:url" content="https://simplydevlab.github.io/simplydone-site/" />
     <meta property="og:image" content="https://simplydevlab.github.io/simplydone-site/todo/images/icon.png" />
     <meta property="og:image:alt" content="SimplyDone app icon" />
@@ -23,7 +23,7 @@
         "@context": "https://schema.org",
         "@type": "MobileApplication",
         "name": "SimplyDone - ToDo & Tasks",
-        "description": "Lists, tasks, reminders and routines, kept simple. Free, with no account. Your lists stay on your iPhone.",
+        "description": "Lists, tasks, notes, reminders and routines, kept simple. Free, with no account. Your lists stay on your iPhone.",
         "url": "https://simplydevlab.github.io/simplydone-site/",
         "image": "https://simplydevlab.github.io/simplydone-site/todo/images/icon.png",
         "operatingSystem": "iOS",
@@ -44,7 +44,7 @@
         <img class="app-icon" src="todo/images/icon.png" width="96" height="96" alt="SimplyDone app icon" />
         <div>
           <h1>SimplyDone - ToDo &amp; Tasks</h1>
-          <p class="tagline">Lists, tasks, reminders and routines, kept simple.</p>
+          <p class="tagline">Lists, tasks, notes, reminders and routines, kept simple.</p>
           <a class="store-badge" href="https://apps.apple.com/app/id6815755294">
             <img src="todo/images/app-store-black.svg" width="150" height="50" alt="Download on the App Store" />
           </a>
@@ -54,20 +54,28 @@
 
       <section class="gallery" aria-label="Screenshots">
         <figure>
-          <figcaption><strong>Your lists, at a glance.</strong> Tiles in your groups' colors, pinned up top.</figcaption>
-          <div class="phone"><img src="todo/images/main.webp" width="660" height="1435" alt="The main screen in dark mode: this week's done count and streak, pinned lists as tiles, and active lists in color groups" /></div>
+          <figcaption><strong>Your lists, at a glance.</strong> Your week, your streak, and what's pinned.</figcaption>
+          <div class="phone"><img src="todo/images/main.webp" width="660" height="1435" alt="The main screen: a search field, this week's done count and streak, pinned lists as tiles, and active lists in color groups" /></div>
+        </figure>
+        <figure>
+          <figcaption><strong>Jot it down.</strong> Plain notes, linked to the lists they're about.</figcaption>
+          <div class="phone"><img src="todo/images/notes.webp" width="660" height="1435" alt="A note planning a Tokyo trip, linked to a Tokyo trip list and a Books to read list" loading="lazy" /></div>
         </figure>
         <figure>
           <figcaption><strong>Just check it off.</strong> What's left and what's next, right at the top.</figcaption>
           <div class="phone"><img src="todo/images/check.webp" width="660" height="1435" alt="A work list with 3 of 6 tasks left, its next reminder, and done tasks folded below" loading="lazy" /></div>
         </figure>
         <figure>
+          <figcaption><strong>Break it into small steps.</strong> Steps inside any task, with notes and photos.</figcaption>
+          <div class="phone"><img src="todo/images/steps.webp" width="660" height="1435" alt="A workout list whose tasks open into steps, some ticked, one with a description" loading="lazy" /></div>
+        </figure>
+        <figure>
           <figcaption><strong>Make it a routine.</strong> Lists that repeat, with every day kept in History.</figcaption>
           <div class="phone"><img src="todo/images/routine.webp" width="660" height="1435" alt="History of a daily morning list: a calendar of the days kept, the average done, and the best run" loading="lazy" /></div>
         </figure>
         <figure>
-          <figcaption><strong>See your progress.</strong> Your week by group, and your streak.</figcaption>
-          <div class="phone"><img src="todo/images/progress.webp" width="660" height="1435" alt="The main screen in light mode, with the week's tasks done by group and a 29-day streak" loading="lazy" /></div>
+          <figcaption><strong>Find anything, fast.</strong> One search for your lists and your notes.</figcaption>
+          <div class="phone"><img src="todo/images/search.webp" width="660" height="1435" alt="Searching the main screen for week: two matching lists and two matching notes" loading="lazy" /></div>
         </figure>
         <figure>
           <figcaption><strong>Never miss a thing.</strong> What's up next, and every reminder by day.</figcaption>
@@ -78,8 +86,8 @@
           <div class="phone"><img src="todo/images/icons.webp" width="660" height="1435" alt="Editing a trip list: its icon, group and repeat" loading="lazy" /></div>
         </figure>
         <figure>
-          <figcaption><strong>No sign-up. Just start.</strong> Your lists never leave your iPhone.</figcaption>
-          <div class="phone"><img src="todo/images/start.webp" width="660" height="1435" alt="The welcome screen, with a New list button and ready-made lists to start from" loading="lazy" /></div>
+          <figcaption><strong>No sign-up. Just start.</strong> Your lists and notes never leave your iPhone.</figcaption>
+          <div class="phone"><img src="todo/images/start.webp" width="660" height="1435" alt="The welcome screen, with a New list button, ready-made lists to start from, and Write a note" loading="lazy" /></div>
         </figure>
       </section>
 
@@ -87,11 +95,15 @@
       <div class="features">
         <div class="card">
           <h3>Your lists stay yours</h3>
-          <p>Your lists, tasks and photos are saved only on your device. No account to create, and nothing you write is shared with advertisers.</p>
+          <p>Your lists, tasks, notes and photos are saved only on your device. No account to create, and nothing you write is shared with advertisers.</p>
         </div>
         <div class="card">
-          <h3>Redesigned in 2.0</h3>
-          <p>Your lists as tiles in their group's color, each with its own icon from a set of 40. What's left and what's next, right at the top of every list.</p>
+          <h3>Notes, new in 2.1</h3>
+          <p>Write a note, just a title and plain text, and link it to as many lists as you like. Each link shows what's left, and each list shows the notes that link it.</p>
+        </div>
+        <div class="card">
+          <h3>Steps inside tasks</h3>
+          <p>Break a task into a short checklist. Each step has its own tick, and a description or photos if you like.</p>
         </div>
         <div class="card">
           <h3>Repeating lists</h3>
@@ -114,8 +126,8 @@
           <p>Add a description or a photo to any task, so the details are right where you need them.</p>
         </div>
         <div class="card">
-          <h3>Groups, pins and filters</h3>
-          <p>Color-code lists into groups, pin the ones you use most, and filter to see just what matters.</p>
+          <h3>Groups, pins and search</h3>
+          <p>Lists as tiles in their group's color, each with its own icon from a set of 40. Pin the ones you use most, and search your lists and notes from the main screen.</p>
         </div>
         <div class="card">
           <h3>Light and dark</h3>
@@ -131,7 +143,7 @@
       <div class="features">
         <div class="card">
           <p class="label">Free</p>
-          <p>Everything: unlimited lists and tasks, repeating lists, progress and streak, reminders, photos, groups and sharing. A small banner ad keeps it free.</p>
+          <p>Everything: unlimited lists, tasks and notes, steps, repeating lists, progress and streak, reminders, photos, groups and sharing. A small banner ad keeps it free.</p>
         </div>
         <div class="card">
           <p class="label">SimplyDone Pro</p>
